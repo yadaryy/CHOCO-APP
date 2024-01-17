@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "Application">
+      <FileRef
+         location = "group:CHOCO.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Modules">
+      <FileRef
+         location = "group:Window/Window.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Landing/Landing.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:ChatLogIn/ChatLogIn.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:MainTabBar/MainTabBar.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:ChatRoom/ChatRoom.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Friend/Friend.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Profile/Profile.xcodeproj">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:AppServices/AppServices.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UseCases/UseCases.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Models/Models.xcodeproj">
+   </FileRef>
+</Workspace>

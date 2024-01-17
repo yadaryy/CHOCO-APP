@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Landing View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LandingViewController" id="Y6W-OH-hqX" customClass="LandingViewController" customModule="Landing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GrX-Ah-FtQ">
+                                <rect key="frame" x="156.66666666666666" y="155" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="0dX-kq-LlY"/>
+                                    <constraint firstAttribute="height" constant="80" id="2H6-m4-z2M"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="og2-by-CwV">
+                                <rect key="frame" x="145" y="406" width="103" height="41"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Let's Start">
+                                    <color key="baseForegroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                    <color key="baseBackgroundColor" systemColor="tableCellBlueTextColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onStartTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="TVo-wC-Ild"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHOCCO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63p-pW-spK">
+                                <rect key="frame" x="137.66666666666666" y="263" width="118" height="31"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                <color key="textColor" red="0.3511714339" green="0.21361598370000001" blue="0.10584945229999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="63p-pW-spK" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="G4F-LF-Cqz"/>
+                            <constraint firstItem="og2-by-CwV" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="bRL-kH-K5n"/>
+                            <constraint firstItem="GrX-Ah-FtQ" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="h5p-z7-dqK"/>
+                            <constraint firstItem="GrX-Ah-FtQ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="96" id="nVu-iO-WgR"/>
+                            <constraint firstItem="63p-pW-spK" firstAttribute="top" secondItem="GrX-Ah-FtQ" secondAttribute="bottom" constant="28" id="rJc-Qu-H1X"/>
+                            <constraint firstItem="og2-by-CwV" firstAttribute="top" secondItem="63p-pW-spK" secondAttribute="bottom" constant="112" id="t0A-eA-63R"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logoImageView" destination="GrX-Ah-FtQ" id="row-CH-2OO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tableCellBlueTextColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
